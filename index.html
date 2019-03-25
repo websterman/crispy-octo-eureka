@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Butik</title>
+  <meta charset="utf-8" />
+  <link rel="stylesheet" type="text/css" href="normalize.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="script.js"></script>
+</head>
+
+<body id="PageBody" class="current-page-1">
+
+  <div id="Header">
+    <h1>Butik</h1>
+ 
+    <div id="PageNavigation">
+      <div>
+        <a href="#" class="menu-item" data-target="content-page-1" data-index="1">Home</a>
+      </div>
+      <div>
+        <a href="#" class="menu-item" data-target="content-page-2" data-index="2">About</a>
+      </div>
+      <div>
+        <a href="#" class="menu-item" data-target="content-page-3" data-index="3">Cart</a>
+      </div>
+    </div>
+    <button id="hamburger">=</button>
+  </div>
+  <div id="PageContent"  >
+    <div id="kassa">
+      <h2>Kassa</h2>
+      <div id="register-content">
+      <div id="cart-container">
+        <ul id="cart">
+          <li class="cart-item">
+            <span class="cart-item-name">Pennvässare</span><input type="number" value="2" name="qty" class="qty"><a href="#" class="remove-cart-item">X</a>
+          </li>
+          <li class="cart-item">
+            <span class="cart-item-name">Hårborste</span><input type="number" value="3" name="qty" class="qty"><a href="#" class="remove-cart-item">X</a>
+          </li>
+          <li class="cart-item">
+            <span class="cart-item-name">Godispåse</span><input type="number" value="2" name="qty" class="qty"><a href="#" class="remove-cart-item">X</a>
+          </li>
+          <li class="cart-item">
+            <span class="cart-item-name">Mobilladdare</span><input type="number" value="3" name="qty" class="qty"><a href="#" class="remove-cart-item">X</a>
+          </li>
+        </ul>
+      </div>
+      <div id="address">
+        <div id="billing">
+          <h2>Faktureringsadress</h2>
+          <label>Namn</label><input type="text" name="billing_name" id="billing_name">
+          <label>Adress</label><input type="text" name="billing_address" id="billing_address">
+          <label>Telefon</label><input type="text" name="billing_phone" id="billing_phone">
+        </div>
+        <button id="copy_address">Kopiera Faktureringsadress till Leveransadress</button>
+        <div id="shipping">
+          <h2>Leveransadress</h2>
+          <label>Namn</label><input type="text" name="shipping_name" id="shipping_name">
+          <label>Adress</label><input type="text" name="shipping_address" id="shipping_address">
+          <label>Telefon</label><input type="text" name="shipping_phone" id="shipping_phone">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="PageFooter">Copyright Academy 2019</div>
+</body>
+
+
+</html>

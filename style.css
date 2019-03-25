@@ -1,0 +1,78 @@
+.rotated{ transform: rotate(90deg);}
+.hidden { display: none;}
+
+
+
+#Header, #PageFooter {
+  padding: 1px 0 0 0 ;
+}
+#PageBody {
+  width: 1200px;
+  margin: 0 auto;
+}
+#PageContent {
+  padding: 1px 0;
+}
+#PageNavigation {
+  display: flex;
+  width: 800px;
+  margin: 0 auto;
+  align-content: space-around;
+}
+#PageNavigation > * {
+  flex: 1 0 auto;
+}
+#PageNavigation a {
+  display: block;
+  text-align: center;
+  padding: 14px 30px;
+  background: #eee;
+margin: 0 5px;
+}
+h1 {
+  text-align: center;;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+ul li {
+  margin:20px 0; 
+}
+ul li span {
+  display: inline-block;
+}
+#cart li span:nth-child(1) {
+  width: 100px;
+}
+#cart input {
+  width: 30px;
+  margin: 0 10px;
+}
+#register-content {
+  display: flex;
+}
+#register-content > * {
+  flex: 50%;
+  margin: 0 5px;
+  padding: 40px 60px;
+  background: #efefef;
+}
+#address label {
+  display: block;
+}
+#PageNavigation {
+  opacity: 0;
+  overflow: hidden;
+  transition: all 1s;
+}
+#PageNavigation.open {
+  opacity: 1;
+  transform: rotate(40deg);
+}
+@media only screen and (max-device-width: 768px) {
+
+}
+@media print { 
+
+}
